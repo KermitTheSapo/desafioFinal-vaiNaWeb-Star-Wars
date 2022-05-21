@@ -5,19 +5,20 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    list-style: none;
 }
 
 header {
     background-image: url("assets/header/background-header-section1.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    border: solid red;
 }
 
 header section{
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
+    height: 900px;
 }
 
 
@@ -26,7 +27,7 @@ header section{
     height: 1022px;
     position: relative;
     right:30px;
-    top: 50px;
+    top: 190px;
 }
 
 .star{
@@ -42,13 +43,12 @@ header section{
 }
 
 .legiao-header {
-    border: solid yellow;
-    height: 250px;
+    height: 210px;
     width: 250px;
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    bottom: 100px;
+    bottom: 10px;
     right: 200px;
 }
 
@@ -56,38 +56,193 @@ header section{
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    height: 150px;
+    height: 130px;
     width: 200px;
     flex-direction: column;
 }
 
 .crie {
-    border: solid red;
     width: 150px;
     font-size: 30px;
 }
 
 .sua-legiao {
-    border: solid red;
     width: 200px;
     font-size: 30px;
 }
 
 .linha {
     border-top:solid 4px;
-    width: 150px;
+    width: 180px;
     color: black;
 }
 
 .numeros {
-    height: 50px;
-    width: 150px;
+    height: 40px;
+    width: 140px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border: solid;
 }
 
-.numeros p {
+
+.numero-principal {
+    font-size: 35px;
+    width: 34px;
+}
+
+.numero-secundario {
+    font-size: 20px;
+}
+
+.numeros figure img {
+    cursor: pointer;
+}
+
+.comece-a-jogar{
+    background-image: url("assets/main/sobre-o-jogo/banner-play.png");
+    background-repeat: no-repeat;
+    background-size: 398px 584px;
+    width: 398px;
+    height: 584px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    bottom: 60px;
+    left: 10px;
+}
+
+.sobre-e-estrutura {
+    background-image: url("/assets/main/banner-background-main.png");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.comece-a-jogar h2 {
+    color: white;
+    height: 130px;
+    width: 240px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.comece-a-jogar .descrição-como-jogar{
+    color: white;
+    text-align:start;
+    width: 310px;
+    font-size: 19px;
+    font-weight: 200;
+}
+
+.comece-a-jogar button {
+    background: transparent;
+    color: white;
+    height: 50px;
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.section-main-um {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.date {
+    text-align: end;
+    color: white;
+    font-size: 10px;
+    width: 90%;
+}
+
+.sobre-o-jogo {
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.linha-main {
+    border-top:solid 4px;
+    width: 180px;
+    color: black;
+}
+
+.descricao {
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    text-align: end;
+    height: 220px;
+}
+
+.descricao h2 {
     font-size: 30px;
+    text-align: end;
+    width: 100%;
+}
+
+.descricao p {
+    width: 440px;
+    font-size: 15px;
+}
+
+.descricao figure {
+    display: flex;
+}
+
+.linha-sections {
+    border-top:solid 4px;
+    width: 1500px;
+    color: black;
+    display: flex;
+    margin-left: 500px;
+}
+
+.estrutura-de-jogo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+
+.estrutura-de-jogo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    height: 700px;
+}
+
+.estrutura-de-jogo-section ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 80%;
+    width: 600px;
+}
+.estrutura-de-jogo-section ul li {
+    text-align: end;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.estrutura-de-jogo-section ul li:hover {
+    background-color: red;
+    color: white;
+}
+
+.estrutura-de-jogo-section h2 {
+    font-size: 70px;
+    text-align: end;
+    width: 500px;
 }
