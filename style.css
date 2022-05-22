@@ -195,8 +195,9 @@ header section{
 }
 
 .descricao p {
-    width: 440px;
+    width: 435px;
     font-size: 15px;
+    text-align: end;
 }
 
 .descricao figure {
@@ -308,7 +309,9 @@ header section{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: space-evenly;
     height: 1000px;
+    border: solid red;
 }
 
 .hierarquia figure {
@@ -316,12 +319,12 @@ header section{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 95%;
+    height: 90%;
 }
 
 .hierarquia img {
-    height: 85%;
-    width: 60%;
+    height: 100%;
+    width: 78%;
     border: solid;
 }
 
@@ -459,9 +462,104 @@ h4 {
     display: flex;
 }
 
-footer section {
-    
+footer {
+    display: flex;
+    height: 884px;
 }
+
+footer section {
+    background-color: #FF5A56;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.aplicativo {
+    width: 31%;
+    height: 40%;
+}
+
+.aplicativo h3 {
+    width: 100%;
+    font-size: 40px;
+}
+
+.aplicativo section {
+    display: flex;
+    width: 100%;
+}
+
+
+.mobile-ios figure{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+}
+
+.aplicativo section figure img {
+    width: 90%;
+    display: flex;
+}
+
+.mobile-ios {
+    display: flex;
+    flex-direction: row;
+}
+
+.linha-footer {
+    border-top:solid 4px;
+    width: 450px;
+    color: black;
+    display: flex;
+}
+
+.star-wars{
+    height: 40%;
+    width: 31%;
+}
+
+.star-wars figure {
+    height: 40%;
+    width: 100%;
+}
+.star-wars figure  img{
+    width: 258px;
+    height: 126px;
+}
+
+footer section .aplicativo, .star-wars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .darth-vader {
+    width: 30%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .darth-vader .darth {
+    width: 756px;
+    height: 966px;
+    position: relative;
+    right: 140px;
+    top: 50px;
+}
+footer .darth-vader p {
+    width: 62%;
+}
+
+
 
 /*
  .imagem-maior:hover::before{
