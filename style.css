@@ -585,3 +585,184 @@ footer .darth-vader .darth {
 footer .darth-vader p {
     width: 62%;
 }
+
+@media (max-width:425px) {
+    header {
+        background-image: url("assets/header/background-header-section1.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .header-one {
+        height: 140px;
+    }
+    .star {
+        position: absolute;
+        left: 83px;
+        top: 68px;
+        height: 26px;
+        width: 103px;
+    }
+    .wars {
+        height: 26px;
+        width: 103px;
+        left: 266px;
+        top: 68px;
+    }
+    .kylo-ren {
+        width: 262px;
+        height: 198px;
+        left: 10px;
+        top: 45px;
+    }
+    .legiao-header {
+        height: 75px;
+        width: 85px;
+        bottom:-30px;
+        right: 20px;
+    }
+    .crie {
+        width: 16vw;
+        font-size: 10px;
+    }
+    .sua-legiao {
+        width: 30vw;
+        font-size: 10px;
+    }
+    .linha {
+        border-top:solid 4px;
+        width: 80px;
+        color: black;
+    }
+    .numero-da-pagina {
+        width: 80px;
+        height: 21px;
+    }
+    .numero-principal {
+        font-size: 12px;
+        width: 10px;
+    }
+    .numero-secundario {
+        font-size: 10px;
+    }
+    .numero-da-pagina figure img {
+        height: 12px;
+    }
+    .sobre-e-estrutura {
+        background-image: url("/assets/main/banner-background-main.png");
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 425px;
+        height: 500px;
+        border: solid orchid;
+    }
+
+    .comece-a-jogar{
+        background-image: url("assets/main/sobre-o-jogo/banner-play.png");
+        background-repeat: no-repeat;
+        background-size: 281px 413px;
+        width: 281px;
+        height: 413px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        bottom: 250px;
+        left: 100px;
+        border: solid blue;
+    }
+
+    .comece-a-jogar-sobre-o-jogo {
+        border: solid red;
+        width: 425px;
+        height: 900px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+    .comece-a-jogar h2 {
+        color: white;
+        height: 90px;
+        width: 160px;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 500;
+        border: solid;
+    }
+    .comece-a-jogar button {
+        background: transparent;
+        color: white;
+        height: 20px;
+        width: 100px;
+        border: 1px solid white;
+        border-radius: 9px;
+        cursor: pointer;
+    }
+
+    .comece-a-jogar .descrição-como-jogar{
+        color: white;
+        text-align:start;
+        width: 150px;
+        font-size: 10px;
+        font-weight: 200;
+    }
+
+    .sobre-o-jogo {
+        border: solid rebeccapurple;
+        width: 350px;
+        flex-direction: column-reverse;
+        height: 250px;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    .descricao {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        text-align: end;
+        height: 12vh;
+        border: solid yellow;
+    }
+
+    .descricao h2 {
+        font-size: 15px;
+        text-align: end;
+        width: 100%;
+    }
+    .descricao p {
+        width: 83%;
+        font-size: 10px;
+        text-align: end;
+        border: solid saddlebrown;
+    }
+
+    .sobre-o-jogo figure{
+        display: flex;
+        border: solid green;
+    }
+    .sobre-o-jogo figure img{
+        display: flex;
+        width: 281px;
+        height: 169px;
+    }
+    .estrutura-de-jogo {
+        display: none;
+    }
+    .atributos {
+        display: none;
+    }
+    .hierarquia {
+        display: none;
+    }
+    .como-jogar {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+}
