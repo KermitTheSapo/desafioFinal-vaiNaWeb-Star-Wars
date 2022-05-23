@@ -426,7 +426,10 @@ h4 {
 }
 
 .etapa-um button, .etapa-dois button, .etapa-tres button {
-    background: black;
+    background: linear-gradient(to left, #000 50%, #D74430 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: 0.8s ease-in-out;
     color: white;
     height: 50px;
     width: 200px;
@@ -434,6 +437,11 @@ h4 {
     cursor: pointer;
 }
 
+.etapa-um button:hover, .etapa-dois button:hover, .etapa-tres button:hover {
+    background-position: left;
+}
+
+/*
 .etapa-um button:hover, .etapa-dois button:hover, .etapa-tres button:hover {
     background-color: red;
     animation: full-button 0.5s reverse both;
@@ -449,7 +457,7 @@ h4 {
         background-color: black;
     }
 }
-
+*/
 .etapa-um p {
     width: 150px;   
     text-align: center;
