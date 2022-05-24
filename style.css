@@ -592,6 +592,7 @@ footer .darth-vader p {
         background-image: url("assets/header/background-header-section1.png");
         background-size: 100%;
         background-repeat: no-repeat;
+        width: 425px;
     }
     .header-one {
         height: 140px;
@@ -626,7 +627,7 @@ footer .darth-vader p {
         font-size: 10px;
     }
     .sua-legiao {
-        width: 30vw;
+        width: 25vw;
         font-size: 10px;
     }
     .linha {
@@ -656,8 +657,7 @@ footer .darth-vader p {
         align-items: center;
         justify-content: center;
         width: 425px;
-        height: 500px;
-        border: solid orchid;
+        height: 650px;
     }
 
     .comece-a-jogar{
@@ -673,13 +673,11 @@ footer .darth-vader p {
         position: absolute;
         bottom: 250px;
         left: 100px;
-        border: solid blue;
     }
 
     .comece-a-jogar-sobre-o-jogo {
-        border: solid red;
         width: 425px;
-        height: 900px;
+        height: 1000px;
         display: flex;
         align-items: flex-end;
         justify-content: space-around;
@@ -691,7 +689,6 @@ footer .darth-vader p {
         font-size: 30px;
         text-align: center;
         font-weight: 500;
-        border: solid;
     }
     .comece-a-jogar button {
         background: transparent;
@@ -712,22 +709,17 @@ footer .darth-vader p {
     }
 
     .sobre-o-jogo {
-        border: solid rebeccapurple;
         width: 350px;
         flex-direction: column-reverse;
-        height: 250px;
+        height: 1000px;
         justify-content: space-around;
         align-items: flex-end;
     }
     .descricao {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: space-evenly;
-        text-align: end;
-        height: 12vh;
-        border: solid yellow;
+        height: 100px;
+        position: absolute;
+        bottom: -70px;
     }
 
     .descricao h2 {
@@ -739,23 +731,83 @@ footer .darth-vader p {
         width: 83%;
         font-size: 10px;
         text-align: end;
-        border: solid saddlebrown;
     }
 
     .sobre-o-jogo figure{
         display: flex;
-        border: solid green;
     }
     .sobre-o-jogo figure img{
         display: flex;
         width: 281px;
         height: 169px;
+        position: absolute;
+        right: 44px;
+        bottom: 50px;
+    }
+    .linha-sections {
+        border-top:solid 4px;
+        width: 350px;
+        color: black;
+        display: flex;
+        margin-left: 1px;
+        position: absolute;
+        bottom: -80px;
+    }
+    .lord-main {
+        position: absolute;
+        width: 200px;
+        height: 199px;
+        top: 35px;
+        left: 0px;
+    }
+    .rey-main {
+        width: 104px;
+        height: 199px;
+        position: relative;
+        top: 35px;
+    }
+    .estrutura-de-jogo-section {
+        height: 200px;
+        width: 150px;
+    }
+    .estrutura-de-jogo-section ul {
+        height: 80px;
+        width: 50px;
+    }
+    .estrutura-de-jogo-section h2 {
+        font-size: 15px;
+        width: 23vw;
+    }
+    .estrutura-de-jogo-section ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 150px;
+        width: 200px;
+    }
+    .estrutura-de-jogo-section ul li {
+        text-align: end;
+        font-size: 12px;
+        cursor: pointer;
     }
     .estrutura-de-jogo {
-        display: none;
+        width: 100%;
+        align-items: flex-end;
+        justify-content: end;
+        position: relative;
+        top: 80px;
+    }
+    .principal {
+        height: 100px;
+        width: 100px;
     }
     .atributos {
-        display: none;
+        margin-top: 350px;
+        border: solid red;
+    }
+    .imagens-secundarias figure img {
+        height: 100px;
+        width: 100px;
     }
     .hierarquia {
         display: none;
