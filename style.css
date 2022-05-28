@@ -7,6 +7,19 @@
     font-family: 'Open Sans', sans-serif;
     list-style: none;
 }
+::selection {
+    color: #fff;
+    background-color: black;
+}
+::-webkit-scrollbar-track {
+      background-color: #2D2D2D;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #FF5A56;
+}
 
 header {
     background-image: url("assets/header/background-header-section1.png");
@@ -148,9 +161,16 @@ header section{
     border: 1px solid white;
     border-radius: 9px;
     cursor: pointer;
+    background: linear-gradient(to left, transparent 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: 0.8s ease-in-out;
+    
 }
 .comece-a-jogar button:hover {
-    
+    background-color: black;
+    background-position: left; 
+    font-size: 20px;
 }
 
 .comece-a-jogar-sobre-o-jogo {
@@ -291,8 +311,8 @@ header section{
     align-items: center;
 }
 
-.principal:hover {
-    background-color: red;
+.principal::after {
+
 }
 
 .imagens-secundarias {
@@ -929,7 +949,7 @@ footer .darth-vader p {
     }
     .parte-de-cima figure {
         position: absolute;
-        left: -210px;
+        left: -245px;
         top: 2770px;
     }
     .imagem-texto {
@@ -1063,5 +1083,54 @@ footer .darth-vader p {
     .star-wars p {
         font-size: 15px;
         width: 80%;
+    }
+
+}
+
+@media (max-width:320px)  {
+    .sobre-o-jogo figure img{
+        display: flex;
+        width: 281px;
+        height: 169px;
+        position: absolute;
+        right: -60px;
+        bottom: 50px;
+    }
+    header {
+        width: 425px;
+    }
+    main {
+        width: 100%;
+    }
+    .sobre-o-jogo p {
+        width: 360px;
+    }
+    .atributos,.hierarquia,.como-jogar,.aplicativos-star-wars, footer {
+        width: 425px;
+    }
+
+    footer .darth-vader .darth {
+        width: 356px;
+        height: 455px;
+        position: absolute;
+        right: -70px;
+        top: 4250px;
+    }
+}
+@media (max-width:375px) {
+    .sobre-o-jogo figure img {
+        right: -12px;
+    }
+    .atributos,.hierarquia,.como-jogar,.aplicativos-star-wars, footer {
+        width: 425px;
+    }
+}
+@media (max-width:768px) {
+    header {
+        width: 768px;
+    }
+    .wars {
+        left: 266px;
+        top: 68px;
     }
 }
