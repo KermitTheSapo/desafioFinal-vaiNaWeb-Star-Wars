@@ -113,7 +113,7 @@ header section{
 }
 
 .comece-a-jogar{
-    background-image: url("assets/main/sobre-o-jogo/banner-play.png");
+    background-image: url("/assets/main/sobre-o-jogo/banner-play.png");
     background-repeat: no-repeat;
     background-size: 398px 584px;
     width: 398px;
@@ -311,9 +311,6 @@ header section{
     align-items: center;
 }
 
-.principal::after {
-
-}
 
 .imagens-secundarias {
     display: flex;
@@ -322,6 +319,15 @@ header section{
     justify-content: center;
     width: 827px;
 }
+
+/*.hover-imagem-maior {
+    height: 508px;
+    width: 830px;
+    border: solid blue;
+    position: absolute;
+    
+}
+*/
 
 .titulo h2 {
     width: 1500px;
@@ -618,12 +624,13 @@ footer .darth-vader p {
 @media (max-width:425px) {
     header {
         background-image: url("assets/header/background-header-section1.png");
-        background-size: 100%;
+        background-size: 425px;
         background-repeat: no-repeat;
         width: 425px;
     }
     .header-one {
         height: 140px;
+        width: 420px;
     }
     .star {
         position: absolute;
@@ -631,41 +638,48 @@ footer .darth-vader p {
         top: 68px;
         height: 26px;
         width: 103px;
+        
     }
     .wars {
         height: 26px;
         width: 103px;
-        left: 266px;
-        top: 68px;
+        left: -266px;
+        top: -68px;
     }
     .kylo-ren {
         width: 262px;
         height: 198px;
         left: 10px;
         top: 45px;
+        
     }
     .legiao-header {
         height: 75px;
         width: 85px;
         bottom:-30px;
         right: 20px;
+        
     }
     .crie {
         width: 16vw;
         font-size: 10px;
+        
     }
     .sua-legiao {
         width: 25vw;
         font-size: 10px;
+        
     }
     .linha {
         border-top:solid 4px;
         width: 80px;
         color: black;
+        
     }
     .numero-da-pagina {
         width: 80px;
         height: 21px;
+        
     }
     .numero-principal {
         font-size: 12px;
@@ -689,7 +703,6 @@ footer .darth-vader p {
         justify-content: center;
         width: 425px;
         height: 650px;
-
     }
 
     .comece-a-jogar{
@@ -1093,7 +1106,7 @@ footer .darth-vader p {
         width: 281px;
         height: 169px;
         position: absolute;
-        right: -60px;
+        left: 100px;
         bottom: 50px;
     }
     header {
@@ -1127,7 +1140,7 @@ footer .darth-vader p {
 }
 @media (max-width:768px) {
     header {
-        width: 768px;
+        width: 425px;
     }
     .wars {
         left: 266px;
