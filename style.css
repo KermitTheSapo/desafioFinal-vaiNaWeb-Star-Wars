@@ -311,6 +311,240 @@ header section{
     align-items: center;
 }
 
+.hover-img-grande {
+    width: 852px;
+    height: 530px;
+    background-color: red;
+    transition: 1s;
+    position: absolute;
+    right: 49.5%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-img-grande:hover {
+    opacity: 0.7;
+}
+
+.hover-primeira-img-pequena {
+    width: 430px;
+    height: 271px;
+    background-color: purple;
+    transition: 1s;
+    position: absolute;
+    right: 30.5%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width:425px) {
+    .hover-img-grande {
+        height: 250px;
+        width: 380px;
+        right: 5%;
+        top: 1248px;
+    }
+    .hover-segunda-img-pequena {
+        height: 250px;
+        width: 400px;
+    }
+    .hover-terceira-img-pequena {
+        height: 250px;
+        width: 400px;
+    }
+    .hover-quarta-img-pequena {
+        right: 3%;
+        height: 250px;
+        width: 400px;
+    }
+    .hover-primeira-img-pequena {
+        height: 250px;
+        width: 400px;
+        right: 3%;
+    }
+    .borda-bottom-pequeno {
+        bottom: 2%;
+        left: 1%;
+    }
+    
+    .conteudo-grande {
+        height: 300px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: space-evenly;
+        align-items: center;
+        border: solid red;
+
+    }
+    .principal {
+        border: solid blue;
+    }
+
+    .conteudo-grande h4 {
+        font-size: 10px;
+        width: 200px;
+        border: solid;
+    }
+
+    .conteudo-grande p {
+        font-size: 8px;
+        width: 300px;
+        border: solid;
+    }
+
+}
+
+.hover-primeira-img-pequena:hover {
+    opacity: 0.7;
+}
+.hover-segunda-img-pequena {
+    width: 430px;
+    height: 271px;
+    background-color: orange;
+    transition: 1s;
+    position: absolute;
+    right: 10.8%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-segunda-img-pequena:hover {
+    opacity: 0.7;
+}
+.hover-terceira-img-pequena {
+    width: 430px;
+    height: 271px;
+    background-color: blue;
+    transition: 1s;
+    position: absolute;
+    right: 30.2%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-terceira-img-pequena:hover {
+    opacity: 0.7;
+}
+
+.hover-quarta-img-pequena {
+    width: 430px;
+    height: 271px;
+    background-color: green;
+    transition: 1s;
+    position: absolute;
+    right: 10.8%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-quarta-img-pequena:hover {
+    opacity: 0.7;
+}
+
+.borda-top-pequeno {
+    position: absolute;
+    top: 0%;
+    right: 80%;
+    border-top:5px solid white;
+    border-left:5px solid white;
+    margin:1vh 0 0 1vw;
+    width: 3vw;
+    height: 5vh;
+}
+.borda-bottom-pequeno {
+    position: absolute;
+    bottom: 2%;
+    left: 75%;
+    border-bottom:5px solid white;
+    border-right:5px solid white;
+    margin:1vh 0 0 1vw;
+    width: 3vw;
+    height: 5vh;
+}
+
+.conteudo-pequeno {
+    height: 300px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.conteudo-pequeno h4 {
+    font-size: 18px;
+}
+
+.conteudo-pequeno p {
+    font-size: 14px;
+}
+
+.conteudo-grande {
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.conteudo-grande h4 {
+    font-size: 24px;
+}
+
+.conteudo-grande p {
+    font-size: 20px;
+}
+
+.conteudo-grande button, .conteudo-pequeno button {
+    cursor: pointer;
+}
+
+.leia-mais {
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    border: solid 5px white;
+    color: white;
+    font-size: 15px;
+}
+
+.borda-top-grande {
+    position: absolute;
+    top: 0%;
+    right: 85%;
+    border-top:5px solid white;
+    border-left:5px solid white;
+    margin:1vh 0 0 1vw;
+    width: 5vw;
+    height: 5vh;
+}
+.borda-bottom-grande {
+    position: absolute;
+    bottom: 2%;
+    left: 80%;
+    border-bottom:5px solid white;
+    border-right:5px solid white;
+    margin:1vh 0 0 1vw;
+    width: 5vw;
+    height: 5vh;
+}
 
 .imagens-secundarias {
     display: flex;
@@ -318,16 +552,20 @@ header section{
     align-items: center;
     justify-content: center;
     width: 827px;
+    height: 510px;
 }
 
-/*.hover-imagem-maior {
-    height: 508px;
-    width: 830px;
-    border: solid blue;
-    position: absolute;
-    
+.imagens-secundarias figure {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-*/
+
+.imagens-secundarias figure img {
+    width: 410px;
+    height: 251px;
+}
+
 
 .titulo h2 {
     width: 1500px;
@@ -425,29 +663,15 @@ header section{
 
 }
 
-.etapa-um {
+.etapa-um, .etapa-dois, .etapa-tres {
     display: flex;
     flex-direction: column;
     height: 300px;
     justify-content: space-evenly;
     align-items: center;
+    border: solid;
 }
 
-.etapa-dois {
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.etapa-tres {
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
 h4 {
     font-size: 40px;
@@ -455,7 +679,7 @@ h4 {
 }
 
 .prioridade {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .etapa-um button, .etapa-dois button, .etapa-tres button {
@@ -473,6 +697,17 @@ h4 {
 
 .etapa-um button:hover, .etapa-dois button:hover, .etapa-tres button:hover {
     background-position: left;
+}
+
+.etapa-um button:hover ~ .linha-passo-a-passo-black {
+    transition: 2s ease-in-out;
+    color: red;
+    background-position: right bottom;
+}
+
+.etapa-um button:hover ~ .prioridade {
+    color: red;
+    font-weight: 700;
 }
 
 /*
@@ -506,13 +741,6 @@ h4 {
 .etapa-tres p {
     width: 90px;
     text-align: center;
-}
-
-.linha-passo-a-passo-red {
-    border-top:solid 4px;
-    width: 90px;
-    color: red;
-    display: flex;
 }
 
 
@@ -619,6 +847,16 @@ footer .darth-vader .darth {
 }
 footer .darth-vader p {
     width: 72%;
+}
+
+@media (max-width:768px) {
+    header {
+        width: 425px;
+    }
+    .wars {
+        left: 266px;
+        top: 68px;
+    }
 }
 
 @media (max-width:425px) {
@@ -889,10 +1127,12 @@ footer .darth-vader p {
         align-items: center;
         flex-direction: column;
     }
+
     .imagem-maior img{
         height: 250px;
         width: 380px;
     }
+
     .imagens-secundarias {
         display: flex;
         flex-wrap: wrap;
@@ -1099,7 +1339,14 @@ footer .darth-vader p {
     }
 
 }
-
+@media (max-width:375px) {
+    .sobre-o-jogo figure img {
+        right: -12px;
+    }
+    .atributos,.hierarquia,.como-jogar,.aplicativos-star-wars, footer {
+        width: 425px;
+    }
+}
 @media (max-width:320px)  {
     .sobre-o-jogo figure img{
         display: flex;
@@ -1128,22 +1375,5 @@ footer .darth-vader p {
         position: absolute;
         right: -70px;
         top: 4250px;
-    }
-}
-@media (max-width:375px) {
-    .sobre-o-jogo figure img {
-        right: -12px;
-    }
-    .atributos,.hierarquia,.como-jogar,.aplicativos-star-wars, footer {
-        width: 425px;
-    }
-}
-@media (max-width:768px) {
-    header {
-        width: 425px;
-    }
-    .wars {
-        left: 266px;
-        top: 68px;
     }
 }
