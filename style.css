@@ -22,7 +22,7 @@
 }
 
 header {
-    background-image: url("./assets/header/background-header-section1.png");
+    background-image: url("assets/header/background-header-section1.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -113,7 +113,7 @@ header section{
 }
 
 .comece-a-jogar{
-    background-image: url("assets/main/sobre-o-jogo/banner-play.png");
+    background-image: url("./assets/main/sobre-o-jogo/banner-play.png");
     background-repeat: no-repeat;
     background-size: 398px 584px;
     width: 398px;
@@ -128,7 +128,7 @@ header section{
 }
 
 .sobre-e-estrutura {
-    background-image: url("/assets/main/banner-background-main.png");
+    background-image: url("./assets/main/banner-background-main.png");
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
