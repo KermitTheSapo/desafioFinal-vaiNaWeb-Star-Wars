@@ -113,7 +113,7 @@ header section{
 }
 
 .comece-a-jogar{
-    background-image: url("/assets/main/sobre-o-jogo/banner-play.png");
+    background-image: url("./assets/main/sobre-o-jogo/banner-play.png");
     background-repeat: no-repeat;
     background-size: 398px 584px;
     width: 398px;
