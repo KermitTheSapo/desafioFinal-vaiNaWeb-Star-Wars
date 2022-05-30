@@ -22,7 +22,7 @@
 }
 
 header {
-    background-image: url("/assets/header/background-header-section1.png");
+    background-image: url("./assets/header/background-header-section1.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
