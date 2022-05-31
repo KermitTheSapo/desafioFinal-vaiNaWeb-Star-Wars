@@ -342,64 +342,6 @@ header section{
     flex-direction: column;
 }
 
-@media (max-width:425px) {
-    .hover-img-grande {
-        height: 250px;
-        width: 380px;
-        right: 5%;
-        top: 1248px;
-    }
-    .hover-segunda-img-pequena {
-        height: 250px;
-        width: 400px;
-    }
-    .hover-terceira-img-pequena {
-        height: 250px;
-        width: 400px;
-    }
-    .hover-quarta-img-pequena {
-        right: 3%;
-        height: 250px;
-        width: 400px;
-    }
-    .hover-primeira-img-pequena {
-        height: 250px;
-        width: 400px;
-        right: 3%;
-    }
-    .borda-bottom-pequeno {
-        bottom: 2%;
-        left: 1%;
-    }
-    
-    .conteudo-grande {
-        height: 300px;
-        width: 200px;
-        display: flex;
-        flex-direction: column;
-        color: white;
-        justify-content: space-evenly;
-        align-items: center;
-        border: solid red;
-
-    }
-    .principal {
-        border: solid blue;
-    }
-
-    .conteudo-grande h4 {
-        font-size: 10px;
-        width: 200px;
-        border: solid;
-    }
-
-    .conteudo-grande p {
-        font-size: 8px;
-        width: 300px;
-        border: solid;
-    }
-
-}
 
 .hover-primeira-img-pequena:hover {
     opacity: 0.7;
@@ -528,21 +470,21 @@ header section{
 .borda-top-grande {
     position: absolute;
     top: 0%;
-    right: 85%;
+    right: 90%;
     border-top:5px solid white;
     border-left:5px solid white;
     margin:1vh 0 0 1vw;
-    width: 5vw;
+    width: 3vw;
     height: 5vh;
 }
 .borda-bottom-grande {
     position: absolute;
     bottom: 2%;
-    left: 80%;
+    left: 85%;
     border-bottom:5px solid white;
     border-right:5px solid white;
     margin:1vh 0 0 1vw;
-    width: 5vw;
+    width: 3vw;
     height: 5vh;
 }
 
@@ -678,9 +620,6 @@ h4 {
     font-weight: 500;
 }
 
-.prioridade {
-    font-weight: 500;
-}
 
 .etapa-um button, .etapa-dois button, .etapa-tres button {
     background: linear-gradient(to left, #000 50%, #D74430 50%);
@@ -700,33 +639,24 @@ h4 {
 }
 
 .etapa-um button:hover ~ .linha-passo-a-passo-black {
-    transition: 2s ease-in-out;
+    transition: 0.8s ease-in-out;
     color: red;
     background-position: right bottom;
 }
 
-.etapa-um button:hover ~ .prioridade {
+.etapa-dois button:hover ~ .linha-passo-a-passo-black {
+    transition: 0.8s ease-in-out;
     color: red;
-    font-weight: 700;
+    background-position: right bottom;
 }
 
-/*
-.etapa-um button:hover, .etapa-dois button:hover, .etapa-tres button:hover {
-    background-color: red;
-    animation: full-button 0.5s reverse both;
+.etapa-tres button:hover ~ .linha-passo-a-passo-black {
+    transition: 0.8s ease-in-out;
+    color: red;
+    background-position: right bottom;
 }
 
-@keyframes full-button {
 
-    0% {
-        background-color: red;
-    }
-
-    100% {
-        background-color: black;
-    }
-}
-*/
 .etapa-um p {
     width: 150px;   
     text-align: center;
@@ -859,6 +789,93 @@ footer .darth-vader p {
     }
 }
 
+@media (max-width:425px) {
+    .hover-img-grande {
+        height: 250px;
+        width: 380px;
+        right: 5%;
+        top: 1248px;
+    }
+    .hover-segunda-img-pequena {
+        height: 250px;
+        width: 400px;
+        right: 3%;
+    }
+    .hover-terceira-img-pequena {
+        height: 250px;
+        width: 400px;
+        right: 3%;
+    }
+    .hover-quarta-img-pequena {
+        right: 3%;
+        height: 250px;
+        width: 400px;
+    }
+    .hover-primeira-img-pequena {
+        height: 250px;
+        width: 400px;
+        right: 3%;
+    }
+    .borda-top-pequeno {
+        position: absolute;
+        top: 0%;
+        right: 90%;
+        border-top: 5px solid white;
+        border-left:5px solid white;
+        margin:1vh 0 0 1vw;
+        width: 8vw;
+        height: 5vh;
+    }
+    .borda-top-grande {
+        position: absolute;
+        top: 0%;
+        right: 90%;
+        border-top:5px solid white;
+        border-left:5px solid white;
+        margin:1vh 0 0 1vw;
+        width: 8vw;
+        height: 5vh;
+    }
+    .borda-bottom-pequeno {
+        position: absolute;
+        bottom: 2%;
+        left: 90%;
+        border-bottom:5px solid white;
+        border-right:5px solid white;
+        margin:1vh 0 0 1vw;
+        width: 8vw;
+        height: 5vh;
+    }
+    .borda-bottom-grande {
+        position: absolute;
+        bottom: 2%;
+        left: 90%;
+        border-bottom:5px solid white;
+        border-right:5px solid white;
+        margin:1vh 0 0 1vw;
+        width: 8vw;
+        height: 5vh;
+    }
+    
+    .conteudo-grande {
+        height: 300px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: space-evenly;
+    }
+
+    .conteudo-grande h4 {
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .conteudo-grande p {
+        font-size: 12px;
+        width: 300px;
+    }
+}
 @media (max-width:425px) {
     header {
         background-image: url("assets/header/background-header-section1.png");
