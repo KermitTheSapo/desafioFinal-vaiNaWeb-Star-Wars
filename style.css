@@ -324,6 +324,7 @@ header section{
     align-items: center;
     flex-direction: column;
 }
+
 .hover-img-grande:hover {
     opacity: 0.7;
 }
@@ -342,10 +343,10 @@ header section{
     flex-direction: column;
 }
 
-
 .hover-primeira-img-pequena:hover {
     opacity: 0.7;
 }
+
 .hover-segunda-img-pequena {
     width: 430px;
     height: 271px;
@@ -608,9 +609,14 @@ header section{
 .etapa-um, .etapa-dois, .etapa-tres {
     display: flex;
     flex-direction: column;
-    height: 300px;
+    height: 350px;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.etapa-um p, .etapa-dois p, .etapa-tres p{
+    position: relative;
+    top: 50px;
 }
 
 
@@ -631,6 +637,7 @@ h4 {
     font-size: 20px;
     cursor: pointer;
     border: solid;
+    position: absolute;
 }
 
 .etapa-um button:hover, .etapa-dois button:hover, .etapa-tres button:hover {
@@ -653,6 +660,24 @@ h4 {
     transition: 0.8s ease-in-out;
     color: red;
     background-position: right bottom;
+}
+
+.etapa-um button:hover ~ .prioridade{
+    font-weight: 700;
+    transform: scale(125%);
+    transition: 0.8s ease-in-out;
+}
+
+.etapa-dois button:hover ~ .prioridade{
+    font-weight: 700;
+    transform: scale(125%);
+    transition: 0.8s ease-in-out;
+}
+
+.etapa-tres button:hover ~ .prioridade{
+    font-weight: 700;
+    transform: scale(125%);
+    transition: 0.8s ease-in-out;
 }
 
 
@@ -1207,6 +1232,10 @@ footer .darth-vader p {
         width: 95%;
         height: 600px;
     }
+    .etapa-um p, .etapa-dois p, .etapa-tres p{
+        position: relative;
+        top: 20px;
+    }
     .como-jogar-section {
         width: 100%;
     }
@@ -1353,6 +1382,16 @@ footer .darth-vader p {
         font-size: 15px;
         width: 80%;
     }
+    .etapa-um {
+        margin-right: 5px;
+    }
+    .etapa-dois {
+        margin-right: 25px;
+    }
+    .etapa-tres {
+        margin-right: 35px;
+    }
+
 
 }
 @media (max-width:375px) {
